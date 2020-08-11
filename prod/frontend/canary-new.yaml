@@ -67,7 +67,7 @@ spec:
       - name: conformance-test
         type: pre-rollout
         timeout: 15s
-        url: http://flagger-loadtester.prod/
+        url: http://flagger-loadtester.prod-namespace/
         metadata:
           type: bash
           cmd: "curl -sd 'test' http://frontend-canary.prod-namespace:9898/token | grep token"
